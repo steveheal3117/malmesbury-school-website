@@ -4,7 +4,7 @@ backend:
   name: github
   repo: steveheal3117/malmesbury-school-website
   branch: main
-  base_url: https://malmesburyprimaryschool.co.uk
+  base_url: https://malmesbury-school-website.pages.dev
   auth_endpoint: api/auth
   squash_merges: true
   commit_messages:
