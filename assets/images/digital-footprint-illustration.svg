@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 320" role="img" aria-label="Footprint made of words about life online">
+  <rect width="220" height="320" rx="14" fill="#fdf9f2"/>
+  <g fill="#1f3a5f">
+    <ellipse cx="62" cy="58" rx="20" ry="24"/>
+    <ellipse cx="102" cy="40" rx="14" ry="17"/>
+    <ellipse cx="134" cy="44" rx="12" ry="14"/>
+    <ellipse cx="160" cy="56" rx="10" ry="12"/>
+    <ellipse cx="180" cy="74" rx="8" ry="10"/>
+    <path d="M58 96 C96 82 170 88 178 128 C186 170 160 196 156 232 C152 270 136 300 104 302 C66 304 52 270 56 236 C60 200 30 176 34 138 C36 116 44 102 58 96 Z"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-weight="700" fill="#fff" text-anchor="middle">
+    <text x="108" y="126" font-size="17" fill="#ffd66b">photos</text>
+    <text x="104" y="150" font-size="13">posts</text>
+    <text x="114" y="172" font-size="15" fill="#7fd3db">searches</text>
+    <text x="100" y="194" font-size="12">likes · shares</text>
+    <text x="108" y="216" font-size="14" fill="#ffd66b">comments</text>
+    <text x="104" y="238" font-size="12">location</text>
+    <text x="104" y="260" font-size="14" fill="#7fd3db">messages</text>
+    <text x="104" y="282" font-size="11">passwords</text>
+  </g>
+</svg>

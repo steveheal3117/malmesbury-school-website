@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" width="500" height="320">
+  <rect width="500" height="320" fill="#f6f6f4"/>
+  <!-- jumper -->
+  <g>
+    <path d="M110 60 L150 40 L175 60 L190 50 L215 75 L195 100 L185 92 L185 190 L110 190 L110 92 L100 100 L80 75 L105 50 Z" fill="#8f1d2c"/>
+    <circle cx="147" cy="70" r="10" fill="#7a1523"/>
+  </g>
+  <!-- polo shirt -->
+  <g>
+    <path d="M280 55 L310 40 L330 58 L322 66 L322 190 L238 190 L238 66 L230 58 L250 40 Z" fill="#ffffff" stroke="#c9c9c9" stroke-width="2"/>
+    <path d="M280 55 L270 70 L280 80 L290 70 Z" fill="#1f3a5f"/>
+    <circle cx="280" cy="95" r="4" fill="#c9c9c9"/>
+    <circle cx="280" cy="112" r="4" fill="#c9c9c9"/>
+  </g>
+  <!-- pinafore / skirt -->
+  <g>
+    <path d="M375 55 L400 45 L425 55 L415 190 L385 190 Z" fill="#1f3a5f"/>
+    <rect x="385" y="55" width="30" height="18" fill="#16283f"/>
+  </g>
+  <!-- tie -->
+  <g>
+    <polygon points="145,210 160,210 152,225" fill="#ffd66b"/>
+    <polygon points="147,228 158,228 158,270 152,280 146,270" fill="#8f1d2c"/>
+  </g>
+  <!-- shoes -->
+  <g>
+    <ellipse cx="270" cy="270" rx="28" ry="12" fill="#231f20"/>
+    <ellipse cx="330" cy="270" rx="28" ry="12" fill="#231f20"/>
+  </g>
+  <text x="250" y="305" text-anchor="middle" font-family="Verdana, sans-serif" font-size="16" fill="#1f3a5f">Our school uniform</text>
+</svg>

@@ -1,0 +1,346 @@
+# Staff website editor (Decap CMS). Changes are saved as proposals and
+# only go live after an approver (head, deputy head or business manager) approves them.
+backend:
+  name: github
+  repo: steveheal3117/malmesbury-school-website
+  branch: main
+  base_url: https://malmesburyprimaryschool.co.uk
+  auth_endpoint: api/auth
+  squash_merges: true
+  commit_messages:
+    create: 'Create {{collection}} “{{slug}}”'
+    update: 'Update {{collection}} “{{slug}}”'
+    uploadMedia: 'Upload “{{path}}”'
+    deleteMedia: 'Delete “{{path}}”'
+publish_mode: editorial_workflow
+site_url: https://malmesburyprimaryschool.co.uk
+display_url: https://malmesburyprimaryschool.co.uk
+locale: en
+media_folder: assets/images
+public_folder: /images/photos
+collections:
+  - name: home-and-news
+    label: "Home and News"
+    editor: {preview: true}
+    files:
+      - name: home-headteachers-welcome
+        label: "Headteacher's Welcome"
+        file: content/home/headteachers-welcome.md
+        preview_path: headteachers-welcome/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: news-index
+        label: "News"
+        file: content/news/index.md
+        preview_path: news/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: news-adhd-awareness-month
+        label: "ADHD Awareness Month"
+        file: content/news/adhd-awareness-month.md
+        preview_path: news/adhd-awareness-month/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: news-autism-acceptance-month-2026
+        label: "Autism Acceptance Month 2026"
+        file: content/news/autism-acceptance-month-2026.md
+        preview_path: news/autism-acceptance-month-2026/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+  - name: about
+    label: "About"
+    editor: {preview: true}
+    files:
+      - name: about-our-staff-team
+        label: "Our Staff Team"
+        file: content/about/our-staff-team.md
+        preview_path: about/our-staff-team/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: about-expansion-project-planning
+        label: "Our Vision & Expansion"
+        file: content/about/expansion-project-planning.md
+        preview_path: about/our-vision-and-expansion/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: about-results-2
+        label: "Results"
+        file: content/about/results-2.md
+        preview_path: about/results/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: about-ofsted-report-2
+        label: "OFSTED & SIAMS Reports"
+        file: content/about/ofsted-report-2.md
+        preview_path: about/ofsted-report/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: about-governors
+        label: "Governors"
+        file: content/about/governors.md
+        preview_path: about/governors/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: other-friends-of-malmesbury-primary-school
+        label: "Friends of Malmesbury Primary School (FOMPS)"
+        file: content/other/friends-of-malmesbury-primary-school.md
+        preview_path: friends-of-malmesbury/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+  - name: learning
+    label: "Learning"
+    editor: {preview: true}
+    files:
+      - name: about-our-library
+        label: "Our library"
+        file: content/about/our-library.md
+        preview_path: about/our-library/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: about-book-reviews
+        label: "Book Reviews"
+        file: content/about/book-reviews.md
+        preview_path: about/book-reviews/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: learning-curriculum
+        label: "Curriculum"
+        file: content/learning/curriculum.md
+        preview_path: learning/curriculum/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: learning-marvellous-mathemagicians
+        label: "Maths Mastery"
+        file: content/learning/marvellous-mathemagicians.md
+        preview_path: learning/maths-mastery/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: learning-maths-games
+        label: "Maths Games to Play at Home"
+        file: content/learning/maths-games.md
+        preview_path: learning/maths-games/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: learning-music-lessons
+        label: "Music Lessons"
+        file: content/learning/music-lessons.md
+        preview_path: learning/music-lessons/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: learning-outdoor-learning
+        label: "Outdoor Learning"
+        file: content/learning/outdoor-learning.md
+        preview_path: learning/outdoor-learning/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: learning-e-safety
+        label: "Online Safety"
+        file: content/learning/e-safety.md
+        preview_path: learning/e-safety/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: information-send-offer
+        label: "SEND (Special Educational Needs and Disabilities Information)"
+        file: content/information/send-offer.md
+        preview_path: information/send-offer/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: information-dyslexia-friendly-schools-project
+        label: "Dyslexia Friendly Schools"
+        file: content/information/dyslexia-friendly-schools-project.md
+        preview_path: information/dyslexia-friendly-schools/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+  - name: information
+    label: "Information"
+    editor: {preview: true}
+    files:
+      - name: information-current-vacancies
+        label: "Current Vacancies"
+        file: content/information/current-vacancies.md
+        preview_path: information/current-vacancies/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: information-term-dates
+        label: "Term Dates"
+        file: content/information/term-dates.md
+        preview_path: information/term-dates/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: information-admissions
+        label: "Admissions"
+        file: content/information/admissions.md
+        preview_path: parents/admissions/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: information-absence-school
+        label: "Attendance and Absence"
+        file: content/information/absence-school.md
+        preview_path: information/absence/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: information-school-lunches
+        label: "School Lunches"
+        file: content/information/school-lunches.md
+        preview_path: parents/school-lunches/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: information-school-uniform
+        label: "School Uniform"
+        file: content/information/school-uniform.md
+        preview_path: parents/school-uniform/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: information-policies-and-statements
+        label: "Policies and statements"
+        file: content/information/policies-and-statements.md
+        preview_path: information/policies-and-statements/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: information-pupil-premium-statement
+        label: "Pupil Premium Statement"
+        file: content/information/pupil-premium-statement.md
+        preview_path: information/pupil-premium-statement/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: information-pe-grant-statement
+        label: "PE and Sport Premium"
+        file: content/information/pe-grant-statement.md
+        preview_path: information/pe-grant-statement/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: information-academy-information
+        label: "Academy Information"
+        file: content/information/academy-information.md
+        preview_path: information/academy-information/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: other-payments
+        label: "Payments"
+        file: content/other/payments.md
+        preview_path: payments/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: other-school-tours
+        label: "School Tours"
+        file: content/other/school-tours.md
+        preview_path: school-tours/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+  - name: classes
+    label: "Classes"
+    editor: {preview: true}
+    files:
+      - name: classes-eyfs
+        label: "EYFS"
+        file: content/classes/eyfs.md
+        preview_path: classes/eyfs/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: classes-year-1
+        label: "Year 1"
+        file: content/classes/year-1.md
+        preview_path: classes/year-1/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: classes-year-2
+        label: "Year 2"
+        file: content/classes/year-2.md
+        preview_path: classes/year-2/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: classes-year-3
+        label: "Year 3"
+        file: content/classes/year-3.md
+        preview_path: classes/year-3/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: classes-year-4
+        label: "Year 4"
+        file: content/classes/year-4.md
+        preview_path: classes/year-4/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: classes-year-5
+        label: "Year 5"
+        file: content/classes/year-5.md
+        preview_path: classes/year-5/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: classes-year-6
+        label: "Year 6"
+        file: content/classes/year-6.md
+        preview_path: classes/year-6/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+  - name: other-pages
+    label: "Other pages"
+    editor: {preview: true}
+    files:
+      - name: travel-travel
+        label: "Travel"
+        file: content/travel/travel.md
+        preview_path: travel/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: safeguarding-safeguarding
+        label: "Safeguarding and Child Protection"
+        file: content/safeguarding/safeguarding.md
+        preview_path: safeguarding/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: other-contact
+        label: "Contact"
+        file: content/other/contact.md
+        preview_path: contact/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}
+      - name: other-breakfast-club
+        label: "Peas in the Pod"
+        file: content/other/breakfast-club.md
+        preview_path: breakfast-club/
+        fields:
+          - {label: "Page title", name: title, widget: string}
+          - {label: "Page text", name: body, widget: richtext, modes: [rich_text, raw]}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 170" role="img" aria-label="Colourful maths shapes and a ruler">
+  <rect width="320" height="170" rx="16" fill="#fdf9f2"/>
+  <polygon points="58,112 96,40 134,112" fill="#e8871e"/>
+  <circle cx="176" cy="76" r="36" fill="#0fa3b1"/>
+  <rect x="226" y="44" width="64" height="64" rx="6" fill="#8e6bbf"/>
+  <polygon points="30,44 44,30 58,44 44,58" fill="#ffd66b"/>
+  <circle cx="290" cy="138" r="8" fill="#e0605a"/>
+  <g>
+    <rect x="40" y="124" width="232" height="30" rx="5" fill="#ffd66b" stroke="#c9a33f" stroke-width="2"/>
+    <g stroke="#6b5a1f" stroke-width="2">
+      <line x1="56" y1="124" x2="56" y2="140"/><line x1="76" y1="124" x2="76" y2="133"/>
+      <line x1="96" y1="124" x2="96" y2="140"/><line x1="116" y1="124" x2="116" y2="133"/>
+      <line x1="136" y1="124" x2="136" y2="140"/><line x1="156" y1="124" x2="156" y2="133"/>
+      <line x1="176" y1="124" x2="176" y2="140"/><line x1="196" y1="124" x2="196" y2="133"/>
+      <line x1="216" y1="124" x2="216" y2="140"/><line x1="236" y1="124" x2="236" y2="133"/>
+      <line x1="256" y1="124" x2="256" y2="140"/>
+    </g>
+  </g>
+</svg>

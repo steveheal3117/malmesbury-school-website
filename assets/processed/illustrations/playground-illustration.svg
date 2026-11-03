@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#cfe8f5"/>
+  <circle cx="335" cy="45" r="28" fill="#ffd66b"/>
+  <rect x="0" y="230" width="400" height="70" fill="#7bb56a"/>
+  <rect x="0" y="220" width="400" height="16" fill="#8fc47c"/>
+  <!-- climbing frame -->
+  <g stroke="#1f3a5f" stroke-width="6" fill="none" stroke-linecap="round">
+    <line x1="70" y1="230" x2="70" y2="120"/>
+    <line x1="170" y1="230" x2="170" y2="120"/>
+    <line x1="70" y1="120" x2="170" y2="120"/>
+    <line x1="90" y1="230" x2="90" y2="150"/>
+    <line x1="110" y1="230" x2="110" y2="150"/>
+    <line x1="130" y1="230" x2="130" y2="150"/>
+    <line x1="150" y1="230" x2="150" y2="150"/>
+    <line x1="90" y1="150" x2="150" y2="150"/>
+  </g>
+  <!-- slide -->
+  <path d="M170 120 Q 250 130 245 230" stroke="#8f1d2c" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <!-- swing set -->
+  <g stroke="#1f3a5f" stroke-width="6" fill="none" stroke-linecap="round">
+    <line x1="290" y1="110" x2="270" y2="230"/>
+    <line x1="290" y1="110" x2="370" y2="230"/>
+    <line x1="270" y1="230" x2="370" y2="230"/>
+    <line x1="300" y1="112" x2="300" y2="190"/>
+    <line x1="330" y1="112" x2="330" y2="190"/>
+  </g>
+  <rect x="292" y="190" width="16" height="8" rx="2" fill="#ffd66b"/>
+  <rect x="322" y="190" width="16" height="8" rx="2" fill="#ffd66b"/>
+  <text x="200" y="280" text-anchor="middle" font-family="Verdana, sans-serif" font-size="16" fill="#1f3a5f">Time to play</text>
+</svg>

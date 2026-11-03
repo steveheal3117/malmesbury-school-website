@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ title }} | Malmesbury C of E Primary School</title>
+<meta name="description" content="Malmesbury C of E Primary School — {{ title }}">
+{% if noindex %}<meta name="robots" content="noindex, nofollow"><!-- PREVIEW BUILD: remove this tag (and robots.txt) once this is the real production site --->{% endif %}
+<link rel="stylesheet" href="{{ root }}css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="{{ root }}index.html">
+      <img class="logo-img" src="{{ root }}images/photos/site-logo.png" alt="Malmesbury Church of England Primary School">
+    </a>
+    <p class="vision-strip"><span class="vision-line">'Growing together in wisdom and love;</span> <span class="vision-line">discovering life in all its fullness.'</span></p>
+  </div>
+  <nav class="main-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="{{ root }}index.html">Home</a>
+        <ul>
+          <li><a href="{{ root }}headteachers-welcome/index.html">Headteacher's Welcome</a></li>
+          <li><a href="{{ root }}news/index.html">News</a></li>
+        </ul>
+      </li>
+      <li><a href="{{ root }}about/our-staff-team/index.html">About</a>
+        <ul>
+          <li><a href="{{ root }}friends-of-malmesbury/index.html">Friends of Malmesbury Primary (FOMPS)</a></li>
+          <li><a href="{{ root }}about/governors/index.html">Governors</a></li>
+          <li><a href="{{ root }}about/ofsted-report/index.html">OFSTED &amp; SIAMS Reports</a></li>
+          <li><a href="{{ root }}about/our-staff-team/index.html">Our Staff Team</a></li>
+          <li><a href="{{ root }}about/our-vision-and-expansion/index.html">Our Vision &amp; Expansion</a></li>
+          <li><a href="{{ root }}about/results/index.html">Results</a></li>
+        </ul>
+      </li>
+      <li><a href="{{ root }}learning/curriculum/index.html">Learning</a>
+        <ul>
+          <li><a href="{{ root }}learning/curriculum/index.html">Curriculum</a></li>
+          <li><a href="{{ root }}information/dyslexia-friendly-schools/index.html">Dyslexia Friendly Schools</a></li>
+          <li><a href="{{ root }}learning/maths-mastery/index.html">Maths Mastery</a></li>
+          <li><a href="{{ root }}learning/music-lessons/index.html">Music Lessons</a></li>
+          {% if "learning/online-learning-resources/" not in hidden_pages %}<li><a href="{{ root }}learning/online-learning-resources/index.html">Online Learning Resources</a></li>{% endif %}
+          <li><a href="{{ root }}learning/e-safety/index.html">Online Safety</a></li>
+          <li><a href="{{ root }}about/our-library/index.html">Our Library</a></li>
+          <li><a href="{{ root }}learning/outdoor-learning/index.html">Outdoor Learning</a></li>
+          <li><a href="{{ root }}information/send-offer/index.html">SEND Offer</a></li>
+        </ul>
+      </li>
+      <li><a href="{{ root }}information/term-dates/index.html">Information</a>
+        <ul>
+          <li><a href="{{ root }}information/absence/index.html">Absence</a></li>
+          <li><a href="{{ root }}information/academy-information/index.html">Academy Information</a></li>
+          <li><a href="{{ root }}parents/admissions/index.html">Admissions</a></li>
+          {% if "information/british-values/" not in hidden_pages %}<li><a href="{{ root }}information/british-values/index.html">British Values</a></li>{% endif %}
+          <li><a href="{{ root }}information/current-vacancies/index.html">Current Vacancies</a></li>
+          {% if "parents/" not in hidden_pages %}<li><a href="{{ root }}parents/index.html">Parents</a></li>{% endif %}
+          <li><a href="{{ root }}information/pe-grant-statement/index.html">PE and Sport Premium</a></li>
+          <li><a href="{{ root }}information/policies-and-statements/index.html">Policies &amp; Statements</a></li>
+          <li><a href="{{ root }}information/pupil-premium-statement/index.html">Pupil Premium</a></li>
+          <li><a href="{{ root }}parents/school-lunches/index.html">School Lunches</a></li>
+          <li><a href="{{ root }}parents/school-uniform/index.html">School Uniform</a></li>
+          <li><a href="{{ root }}information/term-dates/index.html">Term Dates</a></li>
+        </ul>
+      </li>
+      <li><a href="{{ root }}classes/eyfs/index.html">Classes</a>
+        <ul>
+          <li><a href="{{ root }}classes/eyfs/index.html">EYFS</a></li>
+          <li><a href="{{ root }}classes/year-1/index.html">Year 1</a></li>
+          <li><a href="{{ root }}classes/year-2/index.html">Year 2</a></li>
+          <li><a href="{{ root }}classes/year-3/index.html">Year 3</a></li>
+          <li><a href="{{ root }}classes/year-4/index.html">Year 4</a></li>
+          <li><a href="{{ root }}classes/year-5/index.html">Year 5</a></li>
+          <li><a href="{{ root }}classes/year-6/index.html">Year 6</a></li>
+          {% if "classes/homework/" not in hidden_pages %}<li><a href="{{ root }}classes/homework/index.html">Homework</a></li>{% endif %}
+        </ul>
+      </li>
+      <li><a href="{{ root }}travel/index.html">Travel</a></li>
+      <li><a href="{{ root }}breakfast-club/index.html">Childcare</a></li>
+      <li><a href="{{ root }}safeguarding/index.html">Safeguarding</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+{% if hero_image %}
+<div class="page-hero" style="background-image: url('{{ root }}images/photos/{{ hero_image }}');">
+  <div class="page-hero-overlay">
+    {% if section %}<p class="breadcrumb page-hero-breadcrumb">{{ section }}</p>{% endif %}
+    <h1 class="page-hero-title">{{ title }}</h1>
+  </div>
+</div>
+{% else %}
+{% if section %}<p class="breadcrumb">{{ section }}</p>{% endif %}
+<h1>{{ title }}</h1>
+{% endif %}
+{{ content|safe }}
+</main>
+
+<footer class="site-footer">
+  <div class="footer-quotes">
+    <blockquote class="footer-quote"><p>“Pupils’ needs are met through nurturing, loving relationships and they flourish.”</p><cite>SIAMS inspection 2026</cite></blockquote>
+    <blockquote class="footer-quote"><p>“Behaviour is exemplary across the school. Pupils show high levels of engagement and interest in their learning.”</p><cite>OFSTED inspection 2024</cite></blockquote>
+  </div>
+  <div class="footer-grid">
+    <div>
+      <h2>Contact Us</h2>
+      <p>Malmesbury CE Primary School<br>Tetbury Hill, Malmesbury, Wiltshire, SN16 9JR</p>
+      <p>Tel: 01666 823514<br>Email: <a href="mailto:admin@malmesbury-pri.wilts.sch.uk">admin@malmesbury-pri.wilts.sch.uk</a></p>
+    </div>
+    <div>
+      <h2>Quick Links</h2>
+      <ul class="footer-links">
+        <li><a href="{{ root }}travel/index.html">Travel</a></li>
+        <li><a href="{{ root }}information/term-dates/index.html">Term Dates</a></li>
+        <li><a href="{{ root }}parents/school-lunches/index.html">School Lunches</a></li>
+        {% if "clubs/" not in hidden_pages %}<li><a href="{{ root }}clubs/index.html">Clubs</a></li>{% endif %}
+        <li><a href="{{ root }}contact/index.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>More</h2>
+      <ul class="footer-links">
+        <li><a href="{{ root }}payments/index.html">Online Payments</a></li>
+        <li><a href="{{ root }}friends-of-malmesbury/index.html">Friends of Malmesbury (FOMPS)</a></li>
+        {% if "newsletter/" not in hidden_pages %}<li><a href="{{ root }}newsletter/index.html">Newsletter</a></li>{% endif %}
+        <li><a href="{{ root }}school-tours/index.html">School Tours</a></li>
+        <li><a href="{{ root }}breakfast-club/index.html">Peas in the Pod</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="copyright">Paper copies of any information on this website are available free of charge on request from the school office.</p>
+  <p class="copyright">Copyright Malmesbury CE Primary School — All rights reserved.</p>
+</footer>
+</body>
+</html>

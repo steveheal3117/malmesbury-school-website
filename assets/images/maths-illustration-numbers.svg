@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-label="Colourful numbers and maths symbols">
+  <rect width="320" height="180" rx="16" fill="#fdf9f2"/>
+  <circle cx="40" cy="36" r="10" fill="#ffd66b"/><circle cx="292" cy="150" r="12" fill="#ffd66b"/>
+  <circle cx="280" cy="30" r="6" fill="#0fa3b1"/><circle cx="26" cy="150" r="7" fill="#e0605a"/>
+  <g font-family="Arial Rounded MT Bold, Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text x="62" y="118" font-size="78" fill="#e8871e">1</text>
+    <text x="122" y="104" font-size="64" fill="#8e6bbf">2</text>
+    <text x="182" y="124" font-size="84" fill="#1f77a8">3</text>
+    <text x="250" y="106" font-size="66" fill="#4d8b5a">4</text>
+  </g>
+  <g font-family="Arial, sans-serif" font-weight="700" text-anchor="middle" font-size="30">
+    <rect x="44" y="132" width="40" height="34" rx="8" fill="#1f77a8"/><text x="64" y="159" fill="#fff">+</text>
+    <rect x="104" y="132" width="40" height="34" rx="8" fill="#e0605a"/><text x="124" y="157" fill="#fff">−</text>
+    <rect x="164" y="132" width="40" height="34" rx="8" fill="#4d8b5a"/><text x="184" y="157" fill="#fff">×</text>
+    <rect x="224" y="132" width="40" height="34" rx="8" fill="#8e6bbf"/><text x="244" y="158" fill="#fff">÷</text>
+  </g>
+</svg>

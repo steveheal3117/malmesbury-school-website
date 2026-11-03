@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60" role="img" aria-label="Report document icon">
+  <circle cx="30" cy="30" r="30" fill="#1f3a5f"/>
+  <path d="M20 14h13l9 9v23a2 2 0 0 1-2 2H20a2 2 0 0 1-2-2V16a2 2 0 0 1 2-2z" fill="#ffffff"/>
+  <path d="M33 14v9h9z" fill="#e2dccf"/>
+  <rect x="22" y="29" width="16" height="2.4" rx="1.2" fill="#1f3a5f"/>
+  <rect x="22" y="35" width="16" height="2.4" rx="1.2" fill="#1f3a5f"/>
+  <rect x="22" y="41" width="10" height="2.4" rx="1.2" fill="#1f3a5f"/>
+</svg>
