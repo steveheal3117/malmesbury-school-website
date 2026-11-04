@@ -3,7 +3,7 @@ title: Safeguarding and Child Protection
 ---
 # Safeguarding and Child Protection
 
-**If you believe a child or young person is at immediate risk of significant harm, contact the police by telephoning 999.**
+**If you believe a child or young person is at immediate risk of significant harm, contact the police by dialling 999.**
 
 If you have any concerns about the welfare of a child or the conduct of an adult- whether within school or outside – please contact us using the email address: [safeguarding@malmesbury-pri.wilts.sch.uk](mailto:safeguarding@malmesbury-pri.wilts.sch.uk)
 
