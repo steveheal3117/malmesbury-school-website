@@ -26,7 +26,7 @@ Second-hand uniform can be bought through the [Friends of Malmesbury Primary Sch
 
 ## Shoes
 <!-- SHOES_IMAGE -->
-Please ensure that your children wear sensible shoes to school. Children are very active during the day both inside the school and in the playground. Their shoes need to be comfortable and safe. "Strappy" sandals are likely to cause trips and falls and boots are not allowed – in extreme weather children will be allowed to wear boots/wellingtons for their journey into school and then change into school shoes.
+Please ensure that your children wear sensible shoes to school. Children are very active during the day both inside the school and in the playground. Their shoes need to be comfortable and safe. "Strappy" sandals are likely to cause trips and falls and boots are not allowed – in extreme weather children will be allowed to wear boots/wellingtons for their journey into school and then change into school shoes. In the winter months some parents may prefer their children to wear ankle-boot style shoes. These should have a low or no heel, similar to the styles pictured.
 
 ## Hair
 <!-- HAIR_IMAGE -->
