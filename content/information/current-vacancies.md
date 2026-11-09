@@ -8,21 +8,6 @@ Visits to the school are encouraged. Please contact the school office to arrange
 
 Please note: we reserve the right to close vacancies early if we receive sufficient applications for a role, or if circumstances change.
 
-## Lunchtime Supervisor (MDSA)
-We wish to appoint a committed and caring lunchtime assistant to join our outstanding staff team. They must share our aspiration of ‘growing together in wisdom and love; discovering life in all its fullness’ for every child in our care.
-
-This post will be to serve food from our dispensary to pupils, and supervise in the hall and then help clean in the hall in preparation for afternoon lessons. They could also work with any of our children from Reception to Year 6 supporting lunchtime and playtime.
-
-Please see the job description for a full list of responsibilities.
-
-- Contract: Temporary
-- Hours of work: 11:35 to 12:40 Monday to Thursday (4 hours 20 minutes per week), 38 working weeks per year plus 5.7 to 6.69 paid holiday (depending on your Wiltshire Schools’ continuous service). You are required to work throughout the school term time.
-- Commencement date: 2nd November 2026
-- Advertisement closing date: 14th October at midnight
-- Interview date: Week commencing 19th October 2026
-
-<!-- VAC_MDSA_TEMP -->
-
 ## ‘Bank’ Midday Supervisory Assistant (MDSA)
 We wish to appoint a committed and caring ‘bank’ lunchtime assistant to join our outstanding staff team. The successful applicant might be required to help serve food to our reception children and then help clear the hall. They could also work with any of our children from Reception to Year 6 supporting lunchtime and playtime.
 

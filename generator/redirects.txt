@@ -101,4 +101,6 @@
 /documents/Music-Development-Plan-2025-26.pdf                /documents/Music-Development-Plan-2026-27.pdf 301
 /documents/Morfa-Bay-June-2026-pixelated.pdf                 /documents/Morfa-Bay-June-2027-pixelated.pdf 301
 /documents/Morfa-Bay-June-2026-NEW.pdf                       /documents/Morfa-Bay-June-2027-pixelated.pdf 301
+/documents/Bank-MDSA-2025-26.zip                             /documents/Bank-MDSA-2026-27.zip 301
+/documents/2026-10-MDSA-temp.zip                             /information/current-vacancies/ 301
 /wp-content/uploads/:year/:month/:file                       /documents/:file 301
