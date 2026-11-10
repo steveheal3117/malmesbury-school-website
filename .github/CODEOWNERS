@@ -1,0 +1,4 @@
+# People who can approve changes to the school website.
+# A change proposed in the staff editor can only be published once one of these people approves it
+# (enforced by the branch protection rule on "main").
+* @steveheal3117 @alisongravattMPS
