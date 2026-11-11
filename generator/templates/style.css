@@ -803,3 +803,9 @@ h2, h3 { clear: both; }
 
 /* Pass 154: links Steve wants underlined */
 a.underlined-link { text-decoration: underline; }
+
+/* Pass 164: click-to-load Google map (no Google cookies until a visitor chooses to load it) */
+.grid-html .map-consent { display: flex; align-items: center; justify-content: center; height: 420px; padding: 1.5rem;
+  border: 2px dashed var(--navy); border-radius: 6px; background: #eef3f8; color: var(--navy); font-weight: 600;
+  font-size: 1.1rem; text-align: center; text-decoration: none; }
+.grid-html .map-consent:hover, .grid-html .map-consent:focus { background: #dfe8f2; text-decoration: underline; }

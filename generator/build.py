@@ -555,10 +555,7 @@ PAGES = [{'src': 'home/index.md', 'out': '', 'section': '', 'title': 'Home'},
                'OTHER_DIVIDER': 'Other information',
                'APPEALS_DIVIDER': 'Admission appeals',
                'FAQ_DIVIDER': 'Admissions FAQs'},
-  'button_grids': {'POLICY_GRID': [[{'html': '<iframe class="map-embed" '
-                                             'src="https://www.google.com/maps/d/embed?mid=1dwyvDXrQHPtJJ-GHMtgdKWJ1GERmbBVn" '
-                                             'title="Interactive map of the inner and outer designated '
-                                             'areas" loading="lazy"></iframe>'}],
+  'button_grids': {'POLICY_GRID': [[{'html': '<a class="map-consent" href="https://www.google.com/maps/d/viewer?mid=1dwyvDXrQHPtJJ-GHMtgdKWJ1GERmbBVn" target="_blank" rel="noopener" onclick="var f=document.createElement(\'iframe\');f.className=\'map-embed\';f.src=\'https://www.google.com/maps/d/embed?mid=1dwyvDXrQHPtJJ-GHMtgdKWJ1GERmbBVn\';f.title=\'Interactive map of the inner and outer designated areas\';this.replaceWith(f);return false;">Click to load Google map of the catchment area (uses Google cookies).</a>'}],
                                    [{'label': 'Admissions Arrangements 2026-2027',
                                      'href': '/documents/Admission-Policy-Malmesbury-CE-Primary-Academy-2026-27.pdf',
                                      'color': 'blue'},
