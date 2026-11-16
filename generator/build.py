@@ -103,6 +103,27 @@ def doc_library_html(categories):
         items = ''.join((f'<li><a href="{u}">{_unquote(os.path.basename(urlparse(u).path))}</a> (hosted on the original school site)</li>' for u in urls))
         blocks.append(f'<div class="page-downloads"><h2>{cat}</h2><ul>{items}</ul></div>')
     return ''.join(blocks)
+EXTERNAL_NOTE = ' (external site)'
+_EXT_A = re.compile('<a (?P<attrs>[^>]*\\bhref="https?://(?P<host>[^/"]+)[^"]*"[^>]*)>(?P<inner>.*?)</a>', re.S)
+
+def mark_external_links(html):
+
+    def fix(m):
+        attrs, host, inner = (m.group('attrs'), m.group('host').lower(), m.group('inner'))
+        if host.endswith('malmesburyprimaryschool.co.uk') or 'class="map-consent"' in attrs or '(external site)' in inner:
+            return m.group(0)
+        inner = re.sub('(<span class="visually-hidden">\\s*\\()external link,?\\s*', '\\1', inner)
+        inner = inner.replace('<span class="visually-hidden"> ()</span>', '')
+        text_only = re.sub('<[^>]+>', '', re.sub('<span class="visually-hidden">.*?</span>', '', inner, flags=re.S)).strip()
+        if '</h3>' in inner:
+            inner = inner.replace('</h3>', EXTERNAL_NOTE + '</h3>', 1)
+        elif not text_only:
+            inner = inner + '<span class="ext-note">(external site)</span>'
+        else:
+            vh = inner.find('<span class="visually-hidden">')
+            inner = inner[:vh] + EXTERNAL_NOTE + inner[vh:] if vh != -1 else inner + EXTERNAL_NOTE
+        return '<a ' + attrs + '>' + inner + '</a>'
+    return _EXT_A.sub(fix, html)
 
 def render_homepage(root):
     icons = root + 'images/icons/'
@@ -553,7 +574,13 @@ PAGES = [{'src': 'home/index.md', 'out': '', 'section': '', 'title': 'Home'},
                'OTHER_DIVIDER': 'Other information',
                'APPEALS_DIVIDER': 'Admission appeals',
                'FAQ_DIVIDER': 'Admissions FAQs'},
-  'button_grids': {'POLICY_GRID': [[{'html': '<a class="map-consent" href="https://www.google.com/maps/d/viewer?mid=1dwyvDXrQHPtJJ-GHMtgdKWJ1GERmbBVn" target="_blank" rel="noopener" onclick="var f=document.createElement(\'iframe\');f.className=\'map-embed\';f.src=\'https://www.google.com/maps/d/embed?mid=1dwyvDXrQHPtJJ-GHMtgdKWJ1GERmbBVn\';f.title=\'Interactive map of the inner and outer designated areas\';this.replaceWith(f);return false;">Click to load Google map of the catchment area (uses Google cookies).</a>'}],
+  'button_grids': {'POLICY_GRID': [[{'html': '<a class="map-consent" '
+                                             'href="https://www.google.com/maps/d/viewer?mid=1dwyvDXrQHPtJJ-GHMtgdKWJ1GERmbBVn" '
+                                             'target="_blank" rel="noopener" onclick="var '
+                                             "f=document.createElement('iframe');f.className='map-embed';f.src='https://www.google.com/maps/d/embed?mid=1dwyvDXrQHPtJJ-GHMtgdKWJ1GERmbBVn';f.title='Interactive "
+                                             'map of the inner and outer designated '
+                                             'areas\';this.replaceWith(f);return false;">Click to load '
+                                             'Google map of the catchment area (uses Google cookies).</a>'}],
                                    [{'label': 'Admissions Arrangements 2026-2027',
                                      'href': '/documents/Admission-Policy-Malmesbury-CE-Primary-Academy-2026-27.pdf',
                                      'color': 'blue'},
@@ -1400,11 +1427,11 @@ def build():
         out_dir = os.path.join(DIST, page['out'])
         os.makedirs(out_dir, exist_ok=True)
         with open(os.path.join(out_dir, 'index.html'), 'w', encoding='utf-8') as f:
-            f.write(out_html)
+            f.write(mark_external_links(out_html))
         count += 1
     not_found = base_tpl.render(title='Page not found', section=None, content="<p>Sorry, we couldn't find that page. Try the navigation above or head back to the <a href='./index.html'>homepage</a>.</p>", root='./', noindex=PREVIEW_MODE)
     with open(os.path.join(DIST, '404.html'), 'w', encoding='utf-8') as f:
-        f.write(not_found)
+        f.write(mark_external_links(not_found))
     if PREVIEW_MODE:
         with open(os.path.join(DIST, 'robots.txt'), 'w', encoding='utf-8') as f:
             f.write('User-agent: *\nDisallow: /\n')
